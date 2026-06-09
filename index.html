@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GregMAT GRE Vocabulary Learning Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">GRE Vocabulary Learning System</p>
+        <h1>GregMAT GRE Vocabulary Portal</h1>
+        <p class="hero-text">Study 38 vocabulary groups with complete word lessons, Bangla meanings, examples, mini exams, progress tracking, and full EPort-style exam links.</p>
+        <div class="hero-actions">
+          <a class="btn primary-btn" href="#groups">Start Learning</a>
+          <button class="btn secondary-btn" id="continueBtn" type="button">Continue Last Group</button>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Project summary">
+        <div class="stat big"><span id="availableGroups">5</span><small>available groups</small></div>
+        <div class="stat-row">
+          <div class="stat"><span>38</span><small>total groups</small></div>
+          <div class="stat"><span>1140</span><small>planned words</small></div>
+        </div>
+        <div class="progress-shell"><div id="overallProgressBar" class="progress-bar"></div></div>
+        <p id="overallProgressText" class="muted">Progress is saved in this browser.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-space" id="groups">
+    <section class="toolbar card">
+      <div>
+        <h2>Vocabulary Groups</h2>
+        <p class="muted">Groups 1–5 are ready now. Remaining groups are visible as Coming Soon for future expansion.</p>
+      </div>
+      <label class="search-label" for="groupSearch">Search groups</label>
+      <input id="groupSearch" class="search-input" type="search" placeholder="Search Group 1, Words 31–60, available..." />
+    </section>
+    <section id="groupGrid" class="group-grid" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Built for deep GRE vocabulary learning: meaning + Bangla + root story + examples + revision + exam practice.</p>
+      <button class="text-btn" id="resetProgressBtn" type="button">Reset saved progress</button>
+    </div>
+  </footer>
+
+  <script src="data/groups-index.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GRE Vocabulary Group</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="group">
+  <header class="group-hero">
+    <div class="container">
+      <a class="back-link" href="index.html">← Back to Home</a>
+      <div class="group-hero-card">
+        <div>
+          <p class="eyebrow" id="groupEyebrow">Vocabulary Group</p>
+          <h1 id="groupTitle">Loading group...</h1>
+          <p class="hero-text" id="groupSubTitle"></p>
+        </div>
+        <div class="group-progress-card">
+          <strong id="learnedCounter">0/30 learned</strong>
+          <div class="progress-shell"><div id="groupProgressBar" class="progress-bar"></div></div>
+          <p class="muted" id="miniScoreText">Mini exam not taken yet.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-space">
+    <section id="notReadyMessage" class="card hidden"></section>
+
+    <section id="groupControls" class="card toolbar hidden">
+      <div>
+        <h2>Study Controls</h2>
+        <p class="muted">Search words, expand cards, and mark words as learned. Progress is saved locally.</p>
+      </div>
+      <div class="control-stack">
+        <input id="wordSearch" class="search-input" type="search" placeholder="Search word, meaning, Bangla, synonym, antonym..." />
+        <div class="action-row">
+          <button class="btn secondary-btn" id="expandAllBtn" type="button">Expand All</button>
+          <button class="btn secondary-btn" id="collapseAllBtn" type="button">Collapse All</button>
+        </div>
+      </div>
+    </section>
+
+    <nav id="wordNav" class="word-nav hidden" aria-label="Word navigation"></nav>
+    <section id="wordCards" class="word-list"></section>
+
+    <section id="revisionSection" class="card hidden"></section>
+    <section id="mini-exam" class="card mini-exam-section hidden"></section>
+    <section id="fullExamSection" class="card group-action-card hidden"></section>
+
+    <section id="groupFooterNav" class="footer-nav hidden">
+      <a class="btn secondary-btn" id="prevGroupBtn" href="#">Previous Group</a>
+      <a class="btn primary-btn" id="nextGroupBtn" href="#">Next Group</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Review deeply, then test yourself with the full EPort-style exam.</p>
+      <a class="text-btn" href="index.html">Home</a>
+    </div>
+  </footer>
+
+  <script src="data/groups-index.js"></script>
+  <script src="data/group-01.js"></script>
+  <script src="data/group-02.js"></script>
+  <script src="data/group-03.js"></script>
+  <script src="data/group-04.js"></script>
+  <script src="data/group-05.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
